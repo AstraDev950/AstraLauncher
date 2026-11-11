@@ -1,0 +1,22 @@
+{
+  "code": 0,
+  "version": "No update published",
+  "created_at": "2026-11-11T00:22:00Z",
+  "default_cloud_drive": null,
+  "cloud_drives": [],
+  "files": [],
+  "default_body": {
+    "language": "en-US",
+    "markdown": "The Astra Launcher update feed is connected. No newer installable APK has been published yet. This feed will list the ARM64 and ARM32 APK packages when a new GitHub release is ready."
+  },
+  "bodies": [
+    {
+      "language": "en-US",
+      "markdown": "The Astra Launcher update feed is connected. No newer installable APK has been published yet. This feed will list the ARM64 and ARM32 APK packages when a new GitHub release is ready."
+    },
+    {
+      "language": "id-ID",
+      "markdown": "Feed pembaruan Astra Launcher sudah tersambung. Belum ada APK baru yang siap dipasang. APK ARM64 dan ARM32 akan dicantumkan di sini setelah rilis GitHub berikutnya tersedia."
+    }
+  ]
+}
