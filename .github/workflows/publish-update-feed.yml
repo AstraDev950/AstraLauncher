@@ -66,8 +66,7 @@ jobs:
                 markdown: changelog
               },
               bodies: [
-                { language: "en-US", markdown: changelog },
-                { language: "id-ID", markdown: changelog }
+                { language: "en-US", markdown: changelog }
               ]
             };
 
