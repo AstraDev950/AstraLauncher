@@ -95,9 +95,9 @@ jobs:
               repo,
               path,
               branch: "main",
-              message: \`Update Astra feed for \${release.tag_name}\`,
+              message: "Update Astra feed for " + release.tag_name,
               content,
               ...(sha ? { sha } : {})
             });
 
-            core.info(\`Published \${files.length} APK(s) for \${feed.version} (versionCode \${feed.code}).\`);
+            core.info("Published " + files.length + " APK(s) for " + feed.version + " (versionCode " + feed.code + ").");
