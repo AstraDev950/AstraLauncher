@@ -18,7 +18,7 @@ jobs:
           script: |
             const release = context.payload.release;
             const description = release.body || "";
-            const versionCodeMatch = description.match(/^\\s*Version\\s*Code\\s*:\\s*(\\d+)\\s*$/im);
+            const versionCodeMatch = description.match(/^\s*Version\s*Code\s*:\s*(\d+)\s*$/im);
 
             if (!versionCodeMatch) {
               throw new Error(
@@ -74,7 +74,7 @@ jobs:
             const { owner, repo } = context.repo;
             const path = "latest_version_md.json";
             const content = Buffer
-              .from(JSON.stringify(feed, null, 2) + "\\n")
+              .from(JSON.stringify(feed, null, 2) + "\n")
               .toString("base64");
 
             let sha;
@@ -95,9 +95,9 @@ jobs:
               repo,
               path,
               branch: "main",
-              message: `Update Astra feed for ${release.tag_name}`,
+              message: \`Update Astra feed for \${release.tag_name}\`,
               content,
               ...(sha ? { sha } : {})
             });
 
-            core.info(`Published ${files.length} APK(s) for ${feed.version} (versionCode ${feed.code}).`);
+            core.info(\`Published \${files.length} APK(s) for \${feed.version} (versionCode \${feed.code}).\`);
